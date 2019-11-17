@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#747373"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imgsmart"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="88dp"
+        android:layout_weight="1"
+        android:background="@drawable/phone"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgpc"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/pc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toEndOf="@+id/imgsmart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgauto"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:background="#00F8F6F6"
+        android:onClick="Login"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/imgart"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkedTextView5"
+        app:srcCompat="@drawable/car" />
+
+    <ImageButton
+        android:id="@+id/imgart"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="56dp"
+        android:background="#00F7F6F6"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgpc"
+        app:srcCompat="@drawable/arte" />
+
+    <ImageButton
+        android:id="@+id/imgbook"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="92dp"
+        android:background="#747373"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkedTextView7"
+        app:layout_constraintVertical_bias="0.244"
+        app:srcCompat="@drawable/libro" />
+
+    <ImageButton
+        android:id="@+id/imgreloj"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FCFCFC"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toEndOf="@+id/imgbook"
+        app:layout_constraintTop_toBottomOf="@+id/checkedTextView8"
+        app:srcCompat="@drawable/reloj" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="smartphone"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imgsmart" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:text="Pc"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imgpc" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView7"
+        android:layout_width="137dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Automoviles"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgauto" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView8"
+        android:layout_width="162dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="Pinturas y arte"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imgart" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView9"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:text="Libros "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imgbook"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView10"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="52dp"
+        android:text="Relojeria"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imgreloj"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="114dp"
+        android:text="CATEGORIAS"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="207dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
